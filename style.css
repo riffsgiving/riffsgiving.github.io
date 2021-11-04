@@ -1,0 +1,139 @@
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+@font-face { font-family: digicastle; src: url(fnt/DigiCastle.ttf); }
+@font-face { font-family: rainy; src: url(fnt/rainyhearts.ttf); }
+@font-face { font-family: gothy; src: url(fnt/GothicPixels.ttf); }
+@font-face { font-family: infernalda; src: url(fnt/Infernalda.ttf); }
+
+
+h1 {
+  /* font-family: 'Shrikhand', cursive !important; */
+  font-family: 'rainy', monospace !important;
+  color: #fff !important;
+  text-shadow: 3px 0px #8ab;
+  -webkit-font-smoothing : none;
+}
+
+h2 {
+  /* font-family: 'Shrikhand', cursive !important; */
+  font-family: 'infernalda', monospace !important;
+  color: #8ab !important;
+  text-shadow: 2px 2px #fff;
+  -webkit-font-smoothing : none;
+}
+
+h3 {
+  /* font-family: 'Shrikhand', cursive !important; */
+  font-family: 'infernalda', monospace !important;
+  color: #fff !important;
+  text-shadow: 2px 2px #8ab;
+  -webkit-font-smoothing : none;
+}
+
+body {
+  font-family: 'rainy', courier !important;
+  font-size: 16px;
+  -webkit-font-smoothing : none;
+}
+
+
+
+
+
+.carousel {
+  border: 1px solid black;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+/* PARALLAX */
+
+.parallax {
+  min-height: 200px;
+  max-height: 200px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.sec1 { background-image: url("img/band/1.jpg"); }
+.sec2 { background-image: url("img/band/2.jpg"); }
+.sec3 { background-image: url("img/band/3.jpg"); }
+.jumbotron {margin-bottom:0;}
+
+
+
+
+a:link,a:visited { text-decoration: none; color: white; font-weight: bold; }
+
+.coolimg { width:200px; height:200px; content:url('img/me_lino2.gif')}
+.coolimg:hover { width:200px; height:200px; content:url('img/me_reg2.gif')}
+
+
+
+#title-text:hover { text-decoration: none; }
+
+#bg {
+    background-color: #15151a;
+}
+
+
+
+
+
+/* sizing stuff */
+
+@media screen and (max-width:767px) {
+  h1{ text-align:center; }
+  h2{ font-size: 36px !important; }
+  h3{ font-size: 72px !important; }
+  .coolimg{ align-content: center; }
+  .mynav{ font-size: 24px; text-align:center; margin-top:-20px;}
+  .mynav2{ margin-top:-20px;}
+  .main{ margin-top:20px; }
+  .carousel {
+    margin: auto;
+    height: 350px;
+    max-width: 600px;
+  }
+  .yes {
+    max-height: 340px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width:768px) {
+  h1{ text-align:left; }
+  h2{ font-size: 48px !important; }
+  h3{ font-size: 96px !important; }
+  .coolimg{float:right;}
+  .mynav{ font-size: 16px;text-align:left;margin-top:-24px;margin-bottom:24px; }
+  .mynav2{ margin-top:-24px;margin-bottom:24px; }
+  .main{ margin-top:80px; }
+  .carousel {
+    margin: auto;
+    max-height: 600px;
+    max-width: 600px;
+  }
+  .yes {
+    max-height: 590px;
+    margin: auto;
+    margin-top: 50%;
+    transform: translateY(-50%);
+  }
+}
