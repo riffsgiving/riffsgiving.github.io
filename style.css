@@ -80,7 +80,7 @@ body {
 
 
 
-a:link,a:visited { text-decoration: none; color: white; font-weight: bold; }
+a:link,a:visited { text-decoration: underline; color: white; font-weight: bold; }
 
 .coolimg { width:200px; height:200px; content:url('img/me_lino2.gif')}
 .coolimg:hover { width:200px; height:200px; content:url('img/me_reg2.gif')}
